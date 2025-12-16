@@ -11,7 +11,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(express.json()); // allow parsing JSON request bodies
-app.use(cors({origin: "http://localhost:5173",credentials:true})); // enable CORS for all origins
+app.use(cors({origin:ENV.CLIENT_URL,credentials:true})); // enable CORS for all origins
 app.use(clerkMiddleware());
 app.get('/',(req,res)=>{
   res.send('Hello World!');
