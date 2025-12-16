@@ -6,7 +6,7 @@ const HomePage = () => {
       <UserButton />
       HomePage
     </div>
-  )
+  ) 
 }
 
 export default HomePage
